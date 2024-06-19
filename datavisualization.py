@@ -12,7 +12,7 @@ def visualize_data():
 
     specific_features = ['Age', 'Number of sexual partners', 'First sexual intercourse', 'Num of pregnancies',
                          'Smokes (years)', 'Smokes (packs/year)', 'Hormonal Contraceptives (years)', 'IUD (years)',
-                         'STDs (number)', 'Dx:Cancer', 'Biopsy']
+                         'STDs (number)', 'Biopsy']
 
     # Create correlation plot for specified features
     corr_data = data[specific_features].corr()
