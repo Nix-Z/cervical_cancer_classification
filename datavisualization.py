@@ -19,7 +19,7 @@ def visualize_data():
     print(corr_data)
     fig_1 = px.imshow(corr_data, labels=dict(color="Correlation"), x=corr_data.columns, y=corr_data.index, text_auto=True)
     fig_1.show()
-    #fig_1.write_image('fig_1.jpg')
+    fig_1.write_image('fig_1.jpg')
 
     # Create histograms for each specified feature
     for feature in specific_features:
@@ -28,7 +28,7 @@ def visualize_data():
         fig.update_yaxes(showgrid=False)
         fig.show()
         sanitized_feature = sanitize_filename(feature)
-        #fig.write_image(f'fig_{sanitized_feature}.jpg')
+        fig.write_image(f'fig_{sanitized_feature}.jpg')
 
     return data
 
