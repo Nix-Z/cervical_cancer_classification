@@ -6,7 +6,7 @@ def preprocess_data():
 
     # Drop unnecessary rows 
     data.drop(['Smokes', 'Hormonal Contraceptives', 'IUD', 'STDs', 'STDs:cervical condylomatosis',
-               'STDs: Number of diagnosis', 'STDs:AIDS','Dx:HPV', 'Dx:CIN', 'Dx', 'Hinselmann',
+               'STDs: Number of diagnosis', 'STDs:AIDS','Dx:HPV', 'Dx:CIN', 'Dx', 'Dx:Cancer','Hinselmann',
                'Schiller', 'Citology', 'STDs: Time since first diagnosis', 'STDs: Time since last diagnosis'],
               axis=1, inplace=True)
 
