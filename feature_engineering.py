@@ -6,7 +6,6 @@ from datavisualization import visualize_data
 def engineer_features():
     data = visualize_data()
 
-    '''
     # Balance data --> Biopsy
     data_majority = data[data['Biopsy']==0]
     data_minority = data[data['Biopsy']==1]
@@ -16,8 +15,7 @@ def engineer_features():
     print(data_upsampled['Biopsy'].groupby(data_upsampled['Biopsy']).count())
     print(data_upsampled.head())
     data = data_upsampled
-    '''
-
+    
     data.to_csv('cervical_cancer_cleansed_data.csv', index=False)
     
     return data
